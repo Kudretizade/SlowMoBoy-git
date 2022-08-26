@@ -968,9 +968,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 622661361}
     m_Modifications:
+    - target: {fileID: 1239928001578691487, guid: 7600207d2df281e4e90b6e02378f5676, type: 3}
+      propertyPath: m_text
+      value: Level Select
+      objectReference: {fileID: 0}
     - target: {fileID: 7399595528860787338, guid: 7600207d2df281e4e90b6e02378f5676, type: 3}
       propertyPath: m_Name
-      value: Button - Play
+      value: Button - Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 9151080264502650986, guid: 7600207d2df281e4e90b6e02378f5676, type: 3}
       propertyPath: m_Pivot.x
