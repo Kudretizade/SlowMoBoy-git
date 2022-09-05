@@ -4,23 +4,25 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody m_Rigidbody;
+    [SerializeField] Rigidbody rigidBody;
 
-    GameObject Player;
-
-    float m_Speed=10f;
+    float Speed=1000f;
 
     void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody>();
+        
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            m_Rigidbody.velocity = transform.forward * m_Speed * Time.deltaTime;
+            rigidBody.velocity = transform.forward * Speed * Time.deltaTime;
             //this.transform.Translate(vector3.forward * Time.deltaTime);
         }
+        if (Input.GetMouseButtonUp(0))
+		    {
+          rigidBody.velocity = Vector3.zero;
+	    	}
     }
 }
