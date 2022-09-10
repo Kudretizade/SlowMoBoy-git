@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Animator animator;
 
-    float Speed = 2500f;
+    float Speed = 1000f;
 
     void Start()
     {
