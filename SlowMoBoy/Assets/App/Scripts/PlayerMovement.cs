@@ -8,11 +8,12 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Animator animator;
 
-    float Speed = 1000f;
+    float Speed = 270f;
 
     void Start()
     {
         Time.timeScale = 1;
+        Application.targetFrameRate = 60;
     }
 
     void Update()
