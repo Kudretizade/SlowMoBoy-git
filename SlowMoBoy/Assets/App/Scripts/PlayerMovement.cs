@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,9 +21,18 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            rigidBody.velocity = transform.forward * Speed * Time.deltaTime;
+            
             //this.transform.Translate(vector3.forward * Time.deltaTime);
-            animator.SetFloat("animSpeed", 1f);
+            if("SampleScene" == SceneManager.GetActiveScene().name)
+            {
+
+            }
+            else
+            {
+                rigidBody.velocity = transform.forward * Speed * Time.deltaTime;
+                animator.SetFloat("animSpeed", 1f);
+            }
+            
         }
         if (Input.GetMouseButtonUp(0))
         {
