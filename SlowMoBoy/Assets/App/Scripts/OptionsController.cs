@@ -10,11 +10,17 @@ public class OptionsController : MonoBehaviour
 
     //------------------------------------------------------
 
+    //private bool GreenOkeyBool;
+    //private bool RedOkeyBool;
+    //private bool OrangeOkeyBool;
+
+    //------------------------------------------------------
+
     public static int CurrentFloorColorID;
 
-    private int GreenFloorID=1;
-    private int RedFloorID=2;
-    private int OrangeFloorID=3;
+    private int GreenFloorID = 1;
+    private int RedFloorID = 2;
+    private int OrangeFloorID = 3;
 
     //------------------------------------------------------
 
@@ -22,10 +28,12 @@ public class OptionsController : MonoBehaviour
     public void GreenButton()
     {
         CurrentFloorColorID = GreenFloorID;
+
         //----------------------------
         GreenOkey.SetActive(true);
         RedOkey.SetActive(false);
         OrangeOkey.SetActive(false);
+        //----------------------------
     }
 
     public void RedButton()
@@ -35,6 +43,7 @@ public class OptionsController : MonoBehaviour
         GreenOkey.SetActive(false);
         RedOkey.SetActive(true);
         OrangeOkey.SetActive(false);
+        //----------------------------
     }
 
     public void OrangeButton()
@@ -44,7 +53,13 @@ public class OptionsController : MonoBehaviour
         GreenOkey.SetActive(false);
         RedOkey.SetActive(false);
         OrangeOkey.SetActive(true);
+        //----------------------------
     }
 
-    
+    private void Update()
+    {
+        
+    }
+
+
 }

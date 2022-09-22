@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
             {
 
             }
+            else if ("OptionsScene" == SceneManager.GetActiveScene().name)
+            {
+
+            }
             else
             {
                 rigidBody.velocity = transform.forward * Speed * Time.deltaTime;
