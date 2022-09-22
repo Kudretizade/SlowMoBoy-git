@@ -143,6 +143,8 @@ MonoBehaviour:
   movement: {fileID: 4531080532879344490}
   GameOverScreen: {fileID: 757329554}
   GameWonScreen: {fileID: 832278539}
+  GameWinSound: {fileID: 0}
+  GameOverSound: {fileID: 0}
 --- !u!1 &173862360
 GameObject:
   m_ObjectHideFlags: 0
